@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My new project 3</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
+  
+
 
 
 </head>
@@ -17,7 +20,7 @@
             <div class="toggle"></div>
         </header>
         <img src="assets/bg.jpg" alt="">
-        <div class="content" data-0-top="opacity:0;left:100px;" data-200-top="opacity:1;left:0px;">
+        <div class="content" data-aos="fade-up">
             <h2>Success By Design</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat modi odit at fuga perferendis possimus,
                 iste cumque facilis quisquam obcaecati ratione aspernatur eum commodi quas. Cum iure iusto reiciendis
@@ -26,7 +29,7 @@
     </div>
 
     <!--About-->
-    <section class="about">
+    <section class="about" data-aos="fade-right">
         <div class="contentbx">
             <h2 class="heading">About Me</h2>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, facere perferendis maiores
@@ -48,19 +51,19 @@
             mollitia voluptas fugit distinctio doloremque eaque voluptates, illo ipsa eos ullam cumque iusto minima
             labore maiores?</p>
         <div class="container">
-            <div class="servicebx">
+            <div class="servicebx" data-aos="fade-up">
                 <div>
                     <img src="assets/icon1.png" alt="">
                     <h2>Design</h2>
                 </div>
             </div>
-            <div class="servicebx">
+            <div class="servicebx" data-aos="fade-up">
                 <div>
                     <img src="assets/icon2.png" alt="">
                     <h2>Developement</h2>
                 </div>
             </div>
-            <div class="servicebx">
+            <div class="servicebx" data-aos="fade-up">
                 <div>
                     <img src="assets/icon3.png" alt="">
                     <h2>Branding</h2>
@@ -77,7 +80,7 @@
                 voluptates ducimus esse aliquam officiis numquam molestiae ratione, cumque vitae doloribus voluptatum
                 tenetur dolores repellat, eaque soluta minima placeat!</p>
         </div>
-        <div class="imgbx">
+        <div class="imgbx" data-aos="fade-left">
             <img src="assets/tech.png" alt="">
         </div>
     </section>
@@ -87,7 +90,7 @@
         <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, facere? Iure consequatur
             autem, soluta, eaque sunt debitis illum molestiae dicta similique odio, provident adipisci odit dignissimos
             sint quibusdam magni nostrum</p>
-        <div class="imgbx">
+        <div class="imgbx" data-aos="fade-up">
             <img src="assets/brand1.png" alt="">
             <img src="assets/brand2.png" alt="">
             <img src="assets/brand3.png" alt="">
@@ -100,7 +103,7 @@
         <h2 class="heading">What Our Cient Says</h2>
 
         <div class="container">
-            <div class="contentbx">
+            <div class="contentbx" data-aos="fade-right">
                 <div>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad odit id incidunt dicta amet
@@ -111,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="contentbx1">
+            <div class="contentbx1" data-aos="fade-right">
                 <div>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad odit id incidunt dicta amet
@@ -134,7 +137,7 @@
     </section>
     <section class="about">
         <div class="contentbx redbg">
-            <div class="form">
+            <div class="form" data-aos="fade-right">
                 <div class="inputbx">
                     <input type="text" name="" placeholder="Full Name">
                 </div>
@@ -152,7 +155,7 @@
                 </div>
             </div>
         </div>
-        <div class=" imgbx2">
+        <div class=" imgbx2"data-aos="fade-left">
 
         </div>
 
@@ -174,9 +177,12 @@
 
 
 
-    <script src="skrollr.js"></script>
-    <script src="text/javascript">
-        var s = skrollr.init();
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset:400,
+          duration:1000
+      });
     </script>
 
 
